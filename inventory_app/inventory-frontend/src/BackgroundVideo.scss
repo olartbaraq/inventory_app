@@ -1,0 +1,15 @@
+.bg-video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.link {
+    text-decoration-line: none;
+    text-decoration-color: lightgrey;
+    color: lightgrey;
+}
