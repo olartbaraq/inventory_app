@@ -28,7 +28,7 @@ class CreateUserView(ModelViewSet):
 
     http_method_names = ['post']
     queryset = CustomUser.objects.all()
-    serializer_class = CreateUserSerializer()
+    serializer_class = CreateUserSerializer
     permission_classes = (IsAuthenticatedCustom, )
     
     def create(self, request):
@@ -53,7 +53,7 @@ class CreateUserView(ModelViewSet):
 class LoginView(ModelViewSet):
     http_method_names = ['POST']
     queryset = CustomUser.objects.all()
-    serializer_class = LoginSerializer()
+    serializer_class = LoginSerializer
     
     def create(self, request):
         """_summary_
@@ -111,7 +111,7 @@ class UpdatePasswordView(ModelViewSet):
         ModelViewSet (_type_): _description_
     """    
     
-    serializer_class = UpdatePasswordSerializer()
+    serializer_class = UpdatePasswordSerializer
     http_method_names = ['POST']
     queryset = CustomUser.objects.all()
     
